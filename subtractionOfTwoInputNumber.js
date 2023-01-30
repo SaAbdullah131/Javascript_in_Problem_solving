@@ -1,7 +1,12 @@
-var orangeCost=1000;
+var grandMaGive=1000;
 
-var appleCost =700;
+var orangeQuan=1;
+var MangoQuan=1;
+var orangePrice=300;
+var MangoPrice=400;
+// total cost of bazar 
+var totalCost =(orangePrice*orangeQuan)+(MangoPrice*MangoQuan);
 
-var costDifference = orangeCost - appleCost;
-
-console.log(costDifference);
+// remaind money on hand..
+var moneyRemaining = grandMaGive - totalCost;
+console.log(moneyRemaining);
