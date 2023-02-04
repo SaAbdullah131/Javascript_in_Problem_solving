@@ -7,11 +7,12 @@ let feet = 12;
 console.log(feeToInch(feet));
 
 //2,centimeter to meter...number return 
-function centimeterTometer(){
-
-
-
+function centimeterTometer(centimeter){
+    let meter = centimeter /100;
+    return meter;
 }
+let centi =1000;
+console.log(centimeterTometer(centi));
 
 // 3 count paper 
 // book1 -->100
