@@ -9,7 +9,6 @@ function reversedWord(str) {
     }
     const reversed = result.join(' ');
     return reversed;
-
 }
 const myString = "I am a good boy";
 const reverse = reversedWord(myString);
