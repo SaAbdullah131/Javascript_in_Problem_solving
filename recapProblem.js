@@ -20,6 +20,8 @@ console.log(centimeterTometer(centi));
 // book3 --300
 function paperRequirements(){
 
+    let totalPrice =0;
+
 
 }
 let friend= ["sajid","mamun","juabeyer bin rashed","chinku"];
@@ -38,6 +40,17 @@ let bestF=bestFriend(friend);
 console.log(bestF);
 
 //5.[45,87,96,63,-56,71,28]// when negative loop stop jei gulo paichi oigula array hisebe return kore dibo..
-function onlyPositive(){
-
+function onlyPositive(number){
+    let newArray = [];
+    for(let i=0;i<number.length;i++) {
+        if(number[i]<0){
+        break;
+    }
+       else if(number[i]>0) {
+        newArray.push(number[i]);
+        }
+    }
+    return newArray;
 }
+let arr= [45,87,63,96,-56,71,28];
+console.log(onlyPositive(arr));
