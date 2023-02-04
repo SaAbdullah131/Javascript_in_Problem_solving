@@ -1,7 +1,10 @@
 // 1. feet to inch 
-function feeToInch() {
-
+function feeToInch(feet) {
+    let inch = feet*12;
+    return inch;
 }
+let feet = 12;
+console.log(feeToInch(feet));
 
 //2,centimeter to meter...number return 
 function centimeterTometer(){
@@ -20,9 +23,11 @@ function paperRequirements(){
 }
 let friend= ["sajid","mamun","juabeyer bin rashed","chinku"];
 function bestFriend(friend) {
-    let largest = friend[0];
-    for(let i=0;i<friend;i++){
-    if(largest<friend[i]){
+    let largest;
+    let lgth=0;
+    for(let i=0;i<friend.length;i++){
+    if(friend[i].length> lgth){
+        lgth = friend[i].length;
         largest = friend[i];
     }
     }
